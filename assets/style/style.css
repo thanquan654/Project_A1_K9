@@ -12,7 +12,7 @@ html {
     font-size: 10px;
     font-family: 'Patrick Hand', cursive;
     font-weight: 500;
-    background-color: aliceblue;
+    background-color: rgba(13, 152, 186, 0.4);
 }
 
 
@@ -60,10 +60,29 @@ main {
         display: inline-block;
         width: 50%;
         height: auto;
-        padding: 12px;
+        padding: 20px;
         position: relative;
         opacity: 0.9;
+        min-height: 197px;
     }
+    /* .member-card:hover .member-card-backward {
+            display: block;
+
+    }
+    .member-card .member-card-backward {
+            display: none;
+            position: relative;
+            top: 0; right: 0; bottom: 0; left: 0;
+            height: 100%;
+            width: 100%;
+            padding: -20px;
+            color: red;
+            background: #000;
+    }
+    .member-card:hover .card-image,
+    .member-card:hover .card-content {
+            display: none; 
+    } */
     .member-card:hover {
         background-color: rgba(238, 238, 238, 0.5);
         opacity: 1;
@@ -105,11 +124,12 @@ main {
         padding: 7px;
     }
     .head-teacher-cards:hover .head-teacher-card-image {
-        animation: up-image 0.7s;
+        transform: translateY(-25px);
+        transition-duration: 0.60s;
     }
-    @keyframes up-image {
-        from {transform: translateY(0);}
-        to {transform: translateY(-25px);}
+    .head-teacher-cards:hover .head-teacher-content {
+        height: 40%;
+        transition-duration: 0.6s;
     }
     .head-teacher-cards .head-teacher-card-image img {
         aspect-ratio: 10/16;
@@ -123,14 +143,14 @@ main {
         left: 0;
         right: 0;
         width: 100%;
-        height: 33.33%;
-        background-color: aliceblue;
+        height: 20%;
+        background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
         border-radius: 10px;
         padding: 5px;
     }
     .head-teacher-cards .head-teacher-content .head-teacher-name {
         font-size: 25px;
-        line-height: 35px;
+        height: 40px;
         margin: 0 5px;
     }
     .head-teacher-cards .head-teacher-content .subject-name {
@@ -160,10 +180,23 @@ main {
     width: calc(100%/4);
     margin: 10px 4px;
     justify-content: space-between;
-    background-color: pink;
     border-radius: 10px;
     border: 1px groove rgba(0, 0, 0, 0.2);
 }
+    /* CSS Modlue: Group background color */
+    .bg-group1 {
+        background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    }
+    .bg-group2 {
+        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+    }
+    .bg-group3 {
+        background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    }
+    .bg-group4 {
+        background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+    }
+    /* .................................. */
 .group-member-cards {
     display: flex;
     flex-wrap: wrap
@@ -208,7 +241,6 @@ main {
 .subject-teacher-card .member-card{
     padding-bottom: 25px;
 }
-
 /* ......................... */
 #home {
     width: 100%;
