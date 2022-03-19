@@ -1,6 +1,6 @@
 /* ||| GENERAL RULE */
 :root {
-    --bg-color: #4ECDC4;
+    
 }
 * {
     margin: 0;
@@ -24,6 +24,7 @@ html {
 }
 
 /* ||| ELEMENT RULE */
+/* || HEADER */
 header {
     position: fixed;
     top: 0;
@@ -48,6 +49,7 @@ nav button {
     font-size: 17px;
     min-width: 120px;
 }
+/* ........................... */
 
 main { 
     margin: 0 7vw;
@@ -63,7 +65,7 @@ main {
         padding: 20px;
         position: relative;
         opacity: 0.9;
-        min-height: 197px;
+        min-height: 200px;
     }
     /* .member-card:hover .member-card-backward {
             display: block;
@@ -185,16 +187,18 @@ main {
 }
     /* CSS Modlue: Group background color */
     .bg-group1 {
-        background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+        background-image: linear-gradient(315deg, rgba(54, 9, 109, 0.6) 0%, rgba(55, 213, 214, 0.8) 74%);
+        /* background-color: rgba(173, 139, 115, 0.85); */
     }
     .bg-group2 {
-        background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+        background-image: linear-gradient(315deg, rgba(126, 232, 250, 0.6) 0%, rgba(128, 255, 114, 0.8) 74%);
+        /* background-color: rgba(206, 171, 147, 0.85); */
     }
     .bg-group3 {
-        background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+        background-image: linear-gradient(315deg, rgba(247, 180, 44, 0.6) 0%,  rgba(252, 87, 94, 0.8) 74%);
     }
     .bg-group4 {
-        background-image: linear-gradient(315deg, #d387ab 0%, #b279a7 74%);
+        background-image: linear-gradient(315deg, rgba(211, 135, 171, 0.6) 0%, rgba(178, 121, 167, 0.8) 74%);
     }
     /* .................................. */
 .group-member-cards {
@@ -253,3 +257,12 @@ main {
     height: 1000px;
     background-color: #000;
 }
+
+
+/* || FOOTER */
+footer {
+    height: 30vh;
+    background-color: #ccc;
+    width: 100%;
+}
+/* ............................... */

@@ -1,0 +1,127 @@
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 740px) and (max-width: 1023px) {
+    header {
+        height: 45px;
+        position: relative;
+    }
+    nav button {
+        line-height: 45px;
+        padding: 0 10px;
+    }
+
+    main {
+        margin: 25px 2.5vw 0 2.25vw;
+    }
+
+    .group-member-container {
+        flex-direction: column;
+    }
+    .group-member-part-container {
+        width: 100%;
+    }
+        /* CSS Responsive Module: Member Card */
+        .member-card {
+            width: calc(100%/6);
+            padding: 15px;
+            min-height: 0;
+        }
+        /* .................................. */
+
+        /* CSS Responsive Module: Head Teacher Card */
+        .head-teacher-cards {
+            width: 40%;
+            height: auto;
+            margin: 0 0 15px 0;
+        }
+        /* ........................................ */
+
+        /* CSS Responsive Module: Subject Teacher Card */
+        .subject-teacher-card {
+            width: 60%;
+        }
+        .subject-teacher-card > section{
+            width: calc(100%/4);  
+        }
+        .subject-teacher-card .subject-name {
+            bottom: 5px;
+        }
+        /* ........................................... */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 740px) {
+    header {
+        height: 45px;
+        position: relative;
+    }
+    nav button {
+        line-height: 45px;
+        padding: 0 10px;
+    }
+    main {
+        margin: 25px 5vw 0 4.5vw;
+    }
+
+        /* CSS Responsive Module: Member Card */
+            .member-card {
+                width: calc(100%/3);
+                padding: 12px;
+                min-height: 0;
+            }
+        /* .............................. */
+
+        /* CSS Responsive Module: Head Teacher Card */
+            .head-teacher-cards {
+                width: 100%;
+                height: auto;
+                margin: 0 0 15px 0;
+            }
+            .head-teacher-card {
+                display: flex;
+            }
+            .head-teacher-cards .head-teacher-card-image {
+                aspect-ratio: 9/14;
+                width: 45%;
+                margin-right: 7px;
+            }
+            .head-teacher-cards .head-teacher-content {
+                position: relative;
+                width: 70%;
+                height: auto;
+            }
+            .head-teacher-cards .head-teacher-content .subject-name {
+                top: 42px;
+                right: 150px;
+            }
+        /* ........................................ */
+
+        /* CSS Responsive Module: Subject Teacher Card*/
+            .subject-teacher-card {
+                width: 100%;
+            }
+            .subject-teacher-card > section{
+                width: calc(100%/3);  
+            }
+            .subject-teacher-card .subject-name {
+                bottom: 5px;
+            }
+        /* ..................... */
+
+    .group-member-container {
+        flex-direction: column;
+    }
+    .group-member-part-container {
+        width: 100%;
+    }
+
+    .teacher-member-cards {
+        flex-direction: column;
+    }   
+}
+
+
